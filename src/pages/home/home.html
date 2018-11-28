@@ -1,0 +1,43 @@
+
+
+<ion-content class="backgoundbody card-background-page">
+<!-- <div>
+   <img src="./assets/imgs/school.jpg" alt="">
+</div> -->
+ <ion-card>
+  <img src="./assets/imgs/school.jpg"/>
+  <!-- <div [ngStyle]="{'font-size': size + 'px', 'font-weight': 'bold'}" class="card-title">{{emergencyTxt}}</div> -->
+  <!-- <ng-marquee  class="card-title" [duration]="scrollAmount" [ngStyle]="{'font-size': size + 'px', 'font-weight': 'bold'}" >{{emergencyTxt}}
+  <mark>Hello, World.... Find Me @ </mark>
+</ng-marquee>  -->
+  <!-- <ion-marquee speed="30" style="height: 24px" [text]="horizontalText">
+  </ion-marquee> -->
+  <marquee scrollamount=25
+   behavior="scroll" [ngStyle]="{'font-size': size + 'px', 'font-weight': 'bold'}" direction="left" class="card-title">{{emergencyTxt}}</marquee>
+</ion-card>
+<ion-item>
+  <!-- <ion-label><ion-icon name="ios-lock-outline" item-left></ion-icon></ion-label> -->
+  <ion-input type="text" value="Agira1" placeholder="Password" [(ngModel)]="emergencyTxt" ></ion-input>
+</ion-item>
+<!-- <ion-fab>
+  <button ion-fab color="primary">Button</button>
+</ion-fab> -->
+<button ion-button large [color]="myColor" [round]="isRound">
+  <ion-icon name="md-arrow-dropleft"></ion-icon>
+</button>
+<button ion-button large [color]="myColor" [round]="isRound">
+  <ion-icon name="md-arrow-dropright"></ion-icon>
+</button>
+<button ion-button large [color]="myColor" [round]="isRound" (click)="size = size + 5">
+  <ion-icon name="md-add"></ion-icon>
+</button>
+<button ion-button large [color]="myColor" [round]="isRound" (click)="size = size - 5">
+  <ion-icon name="md-remove"></ion-icon>
+</button>
+<button ion-button large [color]="myColor" [round]="isRound">
+  Stop
+</button>
+<button ion-button large [color]="myColor" [round]="isRound" (click)="increaseSpeed()">
+  Speed
+</button>
+</ion-content>

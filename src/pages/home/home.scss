@@ -1,0 +1,54 @@
+page-home {
+
+  
+    .backgoundbody { 
+        background-image: url('/assets/imgs/wood.png');
+        //background-image: "./assets/imgs/logo.png";
+      //  background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+    }
+    .card-background-page {
+
+        ion-card {
+          position: relative;
+         // text-align: center;
+        }
+      
+        .card-title {
+          position: absolute;
+          top: 36%;
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color: #fff;
+        }
+      
+        .card-subtitle {
+          font-size: 1.0em;
+          position: absolute;
+          top: 52%;
+          width: 100%;
+          color: #fff;
+        }
+      
+      }
+      ion-item:first-child {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      ion-item:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      ion-item.item {
+        background-color: rgba(255, 255, 255, 0.4);
+        margin-bottom: 1px;
+        .label {
+          width: 10%;
+          color: rgba(0, 0, 0, 0.6);
+          font-size: 1.2em;
+        }
+      }
+      
+}
